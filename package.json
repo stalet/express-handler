@@ -1,0 +1,26 @@
+{
+  "name": "express-handler-root-project",
+  "version": "0.0.1",
+  "description": "Express handler root project",
+  "private": "true",
+  "scripts": {
+    "test": "pnpm run -r --if-present test",
+    "lint": "pnpm run -r --if-present lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/stalet/express-handler.git"
+  },
+  "keywords": [
+    "express"
+  ],
+  "author": "Ståle Tomten",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stalet/express-handler/issues"
+  },
+  "homepage": "https://github.com/stalet/express-handler#readme",
+  "devDependencies": {
+    "lerna": "8.1.2"
+  }
+}
