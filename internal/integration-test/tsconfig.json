@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "extends": "@tsconfig/node20/tsconfig.json",
+  "compilerOptions": {
+    "rootDir": "./src",
+    "outDir": "./lib",
+    "esModuleInterop": true,
+    "baseUrl": ".",
+    "target": "ESNext",
+    "module": "ESNext",
+    "paths": {
+      "*": ["node_modules/*", "src/types/*"]
+    },
+    "lib": [
+      "dom"
+    ],
+    "moduleResolution": "node",
+  },
+  "ts-node": {
+    "files": true
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "test/**/*"]
+}

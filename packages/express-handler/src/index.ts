@@ -1,12 +1,8 @@
-import type { NextFunction, Request, Response } from 'express';
+import { RequestHandler } from 'express';
 
 export default (
-        fn: (
-            req: Request,
-            res: Response,
-            next: NextFunction,
-        ) => Promise<Response>,
-    ) =>
-    (req: Request, res: Response, next: NextFunction): void => {
-        Promise.resolve(fn(req as Request, res as Response, next)).catch(next);
+        fn: RequestHandler,
+    ) : RequestHandler =>
+    (req, res, next): void => {
+        Promise.resolve(fn(req, res, next)).catch(next);
     };
