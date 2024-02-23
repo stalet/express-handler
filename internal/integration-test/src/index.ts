@@ -2,7 +2,7 @@ import express, { Express } from 'express';
 import handler from '@stalet/express-handler';
 
 export type Config = {
-    port: number;
+    port?: number;
 };
 
 export default (config: Config): Promise<Express> => {
@@ -10,15 +10,26 @@ export default (config: Config): Promise<Express> => {
         const app = express();
 
         app.get(
-            '/', 
+            '/',
             handler((req, res) => {
-                res.send('Hello, World!');           
+                res.send('Hello, World!');
             })
         );
 
-        app.listen(config.port, () => {
+        app.get(
+            '/fail',
+            handler((req, res) => {
+                throw "FOO";
+            })
+        );
+
+        if(config.port) {
+            app.listen(config.port, () => {
+                resolve(app);
+            });
+        } else {
             resolve(app);
-        });
+        }
     }
 
 )};
