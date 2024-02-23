@@ -13,7 +13,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/stalet/express-handler.git"
+    "url": "git+ssh://git@github.com/stalet/express-handler.git",
+    "directory": "packages/express-handler"
   },
   "keywords": [
     "express"
