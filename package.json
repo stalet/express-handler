@@ -15,7 +15,7 @@
     "express"
   ],
   "author": "Ståle Tomten",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/stalet/express-handler/issues"
   },
