@@ -34,8 +34,8 @@ importers:
         specifier: 29.5.12
         version: 29.5.12
       '@types/supertest':
-        specifier: 6.0.2
-        version: 6.0.2
+        specifier: 6.0.3
+        version: 6.0.3
       jest:
         specifier: 29.7.0
         version: 29.7.0(@types/node@20.12.7)(ts-node@10.9.2)
@@ -1433,8 +1433,8 @@ packages:
       '@types/node': 20.12.7
     dev: true
 
-  /@types/supertest@6.0.2:
-    resolution: {integrity: sha512-137ypx2lk/wTQbW6An6safu9hXmajAifU/s7szAHLN/FeIm5w7yR0Wkl9fdJMRSHwOn4HLAI0DaB2TOORuhPDg==}
+  /@types/supertest@6.0.3:
+    resolution: {integrity: sha512-8WzXq62EXFhJ7QsH3Ocb/iKQ/Ty9ZVWnVzoTKc9tyyFRRF3a74Tk2+TLFgaFFw364Ere+npzHKEJ6ga2LzIL7w==}
     dependencies:
       '@types/methods': 1.1.4
       '@types/superagent': 8.1.6
