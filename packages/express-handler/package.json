@@ -27,7 +27,7 @@
   "homepage": "https://github.com/stalet/express-handler#readme",
   "devDependencies": {
     "@types/express": "~4.17.21",
-    "typescript": "~5.4.0"
+    "typescript": "~5.9.0"
   },
   "directories": {
     "lib": "lib"
